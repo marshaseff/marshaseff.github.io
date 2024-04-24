@@ -1,0 +1,137 @@
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-Regular.otf);
+}
+@font-face {
+    font-family: quicksandBold;
+    src: url(Quicksand-Bold.otf);
+}
+body{
+    /* background-image: url('./bg.png'); */
+    /*background-color: #aabbcc;
+    background-image: url("./fixedBG.png");*/
+background-size:1920px;
+background-repeat: repeat-y;
+font-size:120%;
+/* background-size: 104vw; */
+font: normal small-caps normal 16px/1.4 quicksand;
+background-color: #Fffff0;
+background-position: 17px center;
+background-position: center center;
+overflow-x: hidden;
+	background-image:url('bigbg.png');
+	background-attachment:fixed;
+	overflow-y: hidden;
+}
+.parallax {
+      height: 500px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+	top: 0px;
+	position: absolute;
+}
+.text_column{
+	max-width:90ch;
+	min-width:40ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+.parallax__layer--back {
+	transform: translateZ(-1px) scale(2);
+	position:absolute;
+	top:0px;
+	
+}
+.background{
+	background-image:url('bigbackground.png');
+	background-attachment:fixed;
+	height:110vh;
+	width:110vw;
+	
+	background-position: center center;
+}
+.header_bar{
+z-index:100;
+vertical-align: middle;
+text-align: center;
+width: 100vw;
+position: relative;
+top: -8px;
+left: -8px;
+font-size: 200%;
+background-color: #F0F0FF;
+border-bottom:1px solid black;
+}
+.header_item{
+display: inline-block;
+margin-left:1em;
+margin-right:1em;
+font-size:50%;
+height:1.5em;
+width:auto;
+padding-right:2em;
+padding-left:2em;
+text-decoration: none;
+}
+.footer{
+vertical-align:middle;
+text-align:justify;
+position:fixed;
+bottom:0px;
+left:0px;
+width:100vw;
+height: 60px;
+background-color: #FFeeFF;
+padding-bottom:0.5em;
+padding-top:0.5em;
+background-color: #F0F0FF;
+border-top:1px solid black;
+}
+.contact_icon{
+display: inline-block;
+height: 60px;
+width: 60px;
+background-image: url("./IconGridblue.png");
+background-size: 580px 510px;
+
+}
+.email{
+background-position: -223px -450px;
+background-repeat:no-repeat;
+margin-right: 2em;
+margin-left: 2em;
+}
+.phone{
+
+background-image: url("./IconGridblue.png");
+background-size: 580px 510px;
+background-position: -148px -450px;
+}
+.linkedIn{
+display: inline-block;
+background-position: -74px -75px;
+margin-right: 10%;
+margin-left: 2em;
+
+}
+hr.gradient {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
